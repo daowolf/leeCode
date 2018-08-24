@@ -23,6 +23,7 @@ public class maxArea {
         return max;
     }
 
+
     @Test
     public void test(){
         int[] arr = {1,3,4,5,2,23,7,9,5};
