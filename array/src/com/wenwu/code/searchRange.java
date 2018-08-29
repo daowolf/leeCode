@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class searchRange {
     public int[] searchRange(int[] nums, int target) {
         int max = nums.length;
-        if (nums[max - 1] < target || nums[0] > target)
+        if (nums[max - 1] < target || nums[0] > target || max == 0)
             return new int[]{-1, -1};
         ArrayList<Integer> integers = new ArrayList<>();
         for (int i = 0; i < max; i++) {
@@ -23,7 +23,7 @@ public class searchRange {
                 return new int[]{-1, -1};
             else if (nums[i] == target) {
                 integers.add(i);
-            }else if(nums[i]>target){
+            } else if (nums[i] > target) {
                 break;
             }
 
