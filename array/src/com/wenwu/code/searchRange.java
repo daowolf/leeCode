@@ -24,6 +24,8 @@ public class searchRange {
                 return new int[]{-1, -1};
             else if (nums[i] == target) {
                 integers.add(i);
+            }else if(nums[i]>target){
+                break;
             }
 
         }
