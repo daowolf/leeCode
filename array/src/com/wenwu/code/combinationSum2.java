@@ -23,7 +23,7 @@ public class combinationSum2 {
         int max = candidates[candidates.length-1];
         int min = candidates[0];
         if(max<target){
-
+            
         }else{
 
         }
